@@ -36,7 +36,7 @@ This project demonstrates a 2-axis servo robotic arm controlled by an MPU-6050 a
    - [Wire.h](https://www.arduino.cc/reference/en/libraries/wire/)
    - [Servo.h](https://www.arduino.cc/reference/en/libraries/servo/)
    - [I2Cdev.h](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/I2Cdev)
-   - [MPU6050_6Axis_MotionApps20.h^](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050)
+   - [MPU6050_6Axis_MotionApps20.h](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050)
 2. Adjust any servo or MPU-6050 calibration settings in the code if needed.
 
 ## Repository Contents
