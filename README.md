@@ -1,7 +1,6 @@
 # Simple-2-axis-Servo-Robotic-Arm
 
 
- Simple 2-Axis Servo Robotic Arm
 
 ## Overview
 This project demonstrates a 2-axis servo robotic arm controlled by an MPU-6050 accelerometer and gyroscope sensor. The arm replicates real-time motion by translating the sensor's orientation data into precise servo movements. It’s a beginner-friendly robotics project designed to showcase the integration of sensors, servos, and embedded programming.
@@ -14,7 +13,7 @@ This project demonstrates a 2-axis servo robotic arm controlled by an MPU-6050 a
 ## Components Used
 - **MPU-6050**: Accelerometer and gyroscope sensor.
 - **Servo Motors**: Two standard servo motors.
-- **Arduino Uno**: Microcontroller for programming and integration.
+- **Arduino Mega**: Microcontroller for programming and integration.
 - **Jumper wires**, breadboard, and other basic hardware.
 
 ## How It Works
@@ -36,6 +35,8 @@ This project demonstrates a 2-axis servo robotic arm controlled by an MPU-6050 a
 1. Install the required libraries:
    - [Wire.h](https://www.arduino.cc/reference/en/libraries/wire/)
    - [Servo.h](https://www.arduino.cc/reference/en/libraries/servo/)
+   - [I2Cdev.h](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/I2Cdev)
+   - [MPU6050_6Axis_MotionApps20.h^](https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050)
 2. Adjust any servo or MPU-6050 calibration settings in the code if needed.
 
 ## Repository Contents
@@ -43,11 +44,29 @@ This project demonstrates a 2-axis servo robotic arm controlled by an MPU-6050 a
 - **`docs/`**: Circuit diagrams and additional resources.
 - **`media/`**: Videos and images of the robotic arm in action.
 
-## Video Demonstration
-Check out the robotic arm in action: [YouTube Link or Video URL]
+## Schematic Connections
+
+Connections for MPU-6050 Sensor Module
+- VCC  -> 3.3V on Arduino Mega 2560
+- GND  -> Ground (GND) on Arduino Mega 2560
+- SDA  -> D20 (SDA) on Arduino Mega 2560
+- SCL  -> D21 (SCL) on Arduino Mega 2560
+- INT  -> D2 on Arduino Mega 2560
+
+
+Connections for Micro Servo Motor (Roll)
+- Signal (S) (Yellow/Orange) -> D9 on Arduino Mega 2560
+- Power (+) (Red)           -> 5V on Arduino Mega 2560
+- Ground (-) (Black/Brown)  -> GND on Arduino Mega 2560
+
+
+Connections for Micro Servo Motor (Pitch)
+- Signal (S) (Yellow/Orange) -> D10 on Arduino Mega 2560
+- Power (+) (Red)            -> 5V on Arduino Mega 2560
+- Ground (-) (Black/Brown)   -> GND on Arduino Mega 2560
 
 ## License
-This project is open-source and available under the [MIT License](LICENSE). Feel free to modify and use it for your own projects!
+This project is open-source. Feel free to modify and use it for your own projects!
 
 ## Acknowledgments
 This project was inspired by [this guide](https://projecthub.arduino.cc/RucksikaaR/simple-2-axis-servo-robotic-arm-controlled-by-mpu-6050-0a31a3). Special thanks to the open-source community for the libraries and resources used.
