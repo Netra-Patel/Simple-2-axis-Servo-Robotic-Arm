@@ -53,7 +53,7 @@ This project demonstrates a 2-axis servo robotic arm controlled by an MPU-6050 a
 - Ground (-) (Black/Brown)   -> GND on Arduino Mega 2560
 
 ## Video Demonstration
-[Download and watch the video](Video_demo./video.mov)
+[![Watch the video](https://img.icons8.com/color/48/000000/play.png)](https://github.com/Netra-Patel/Simple-2-axis-Servo-Robotic-Arm/blob/main/Video_demo.mov)
 
 ## License
 This project is open-source. Feel free to modify and use it for your own projects!
